@@ -2,14 +2,13 @@ from flask import Flask, render_template, request
 import os
 from Model import get_pred_dt_values
 
-# if not os.path.exists("Data"):
-#     os.makedirs("Data",exist_ok=True)
-#
-# if not os.path.exists("Data/Predicted"):
-#     os.makedirs("Data/Predicted", exist_ok=True)
-#
-# if not os.path.exists("Data/Uploaded"):
-#     os.makedirs("Data/Uploaded",   exist_ok=True)
+if not os.path.exists("Data"):
+     os.makedirs("Data",exist_ok=True)
+
+if not os.path.exists("Data/Predicted"):
+     os.makedirs("Data/Predicted", exist_ok=True)
+if not os.path.exists("Data/Uploaded"):
+     os.makedirs("Data/Uploaded",   exist_ok=True)
 
 
 app = Flask(__name__)
