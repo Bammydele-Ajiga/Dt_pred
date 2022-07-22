@@ -1,5 +1,9 @@
-pandas
+pandas=1.4.3
 scikit-learn==1.0.2
 Flask==1.1.2
 requests==2.21.0
 gunicorn==19.9.0z
+Jinja2==2.10.1
+MarkupSafe==1.1.1
+itsdangerous==1.1.0
+Werkzeug==1.0.1
