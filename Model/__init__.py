@@ -17,7 +17,7 @@ def get_pred_dt_values(filepath):
   well_features = scaler.fit_transform(well_features)
   dT_pred = loaded_model.predict(well_features)
   dT_pred =  scaler1.inverse_transform(dT_pred.reshape(-1,1))
-  dT_pred1= pd.DataFrame(dT_pred, columns= ["DT"])
+  dT_pred1= pd.DataFrame(dT_pred, columns= ["PREDICTED DT"])
   # f, ax = plt.subplots(figsize=(4,14))
   # ax.plot(dT_pred,depth , color="green")
   # ax.set_xlim([max(dT_pred), min(dT_pred)])
