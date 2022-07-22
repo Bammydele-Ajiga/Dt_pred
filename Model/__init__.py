@@ -9,7 +9,7 @@ loaded_model = pickle.load(open(filename, 'rb'))
 def get_pred_dt_values(filepath):
   file = open(filepath, "r")
   well = pd.read_csv(file)
-  logs = ['NPHI', 'RHOB', 'GR', 'RT', 'PEF', 'CALI',"DEPTH"]
+  logs = ['WELL', 'NPHI', 'RHOB', 'GR', 'RT', 'PEF', 'CALI',"DEPTH"]
   depth = well["DEPTH"]
   well = well[logs]
   features = ['NPHI', 'RHOB', 'GR', 'RT', 'PEF', 'CALI']
